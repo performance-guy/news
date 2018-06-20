@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Salman Saleem on 6/21/18 1:44 AM
+  ~  * Copyright (c) 2018 . All rights reserved.
+  ~  * Last modified 7/16/17 7:43 PM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.salman.appnews.ui.activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:textColor="#fff"
+        android:text="TextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextViewTextView TextView TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+</LinearLayout>

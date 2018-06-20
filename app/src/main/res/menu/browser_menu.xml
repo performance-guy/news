@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Salman Saleem on 6/21/18 1:44 AM
+  ~  * Copyright (c) 2018 . All rights reserved.
+  ~  * Last modified 7/3/17 11:08 PM
+  ~  */
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_open_browser"
+        android:orderInCategory="100"
+        android:title="@string/open_with_browser"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Salman Saleem on 6/21/18 1:44 AM
+  ~  * Copyright (c) 2018 . All rights reserved.
+  ~  * Last modified 7/4/17 8:34 PM
+  ~  */
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activity.VideoActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_marginTop="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.yo.app.ui.activity.ArticleActivity"
+        tools:showIn="@layout/activity_article"
+        android:layout_above="@+id/adView">
+        <LinearLayout
+            android:background="@drawable/border_bottom"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <WebView
+                android:padding="0dp"
+                android:id="@+id/image_view_article_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/text_view_article_title"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="How to set text size in WebView in android " />
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_marginRight="5dp"
+                    android:tint="@color/graycolor"
+                    app:srcCompat="@drawable/ic_schedule"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/text_view_article_time"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="@color/graycolor"
+                    android:text="3 hours ago"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ProgressBar
+                    android:visibility="gone"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progress_bar_content" />
+                <WebView
+                    android:layout_margin="5dp"
+                    android:id="@+id/web_view_article_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </WebView>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_uni_tid_banner"
+        android:layout_alignParentBottom="true"
+        />
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/card_view_comments"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/relativeLayout_write_comment">
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/imageView_empty_comment"
+                    android:src="@drawable/bg_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_view_article"
+                    android:layout_centerInParent="true"
+                    android:layout_height="fill_parent"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:padding="0dp"
+                android:background="@drawable/border_line_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout_write_comment">
+                <EditText
+                    android:background="@android:color/transparent"
+                    android:padding="15dp"
+                    android:layout_marginRight="60dp"
+                    android:textCursorDrawable="@null"
+                    android:ems="10"
+                    android:id="@+id/edit_text_comment"
+                    android:inputType="textShortMessage"
+                    android:hint="@string/action_add_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:padding="0dp"
+                    android:id="@+id/image_button_add_comment"
+                    app:srcCompat="@drawable/ic_comment_black_24dp"
+                    android:tint="@color/colorPrimaryDark"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <ProgressBar
+                    android:visibility="gone"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/progress_bar_article" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

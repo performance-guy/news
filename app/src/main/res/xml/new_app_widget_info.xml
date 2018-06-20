@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Salman Saleem on 6/21/18 1:44 AM
+  ~  * Copyright (c) 2018 . All rights reserved.
+  ~  * Last modified 2/15/17 2:44 PM
+  ~  */
+  -->
+
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialKeyguardLayout="@layout/new_app_widget"
+    android:initialLayout="@layout/new_app_widget"
+    android:minHeight="110dp"
+    android:minWidth="250dp"
+    android:previewImage="@drawable/example_appwidget_preview"
+    android:updatePeriodMillis="3000"
+    android:widgetCategory="home_screen"></appwidget-provider>

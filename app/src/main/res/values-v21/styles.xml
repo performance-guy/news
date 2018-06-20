@@ -1,0 +1,21 @@
+<!--
+  ~ /**
+  ~  * Created by Salman Saleem on 6/21/18 1:44 AM
+  ~  * Copyright (c) 2018 . All rights reserved.
+  ~  * Last modified 3/7/17 6:30 PM
+  ~  */
+  -->
+
+<resources>
+
+    <style name="AppTheme.NoActionBar" >
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:statusBarColor">@android:color/darker_gray</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+
+
+    </style>
+</resources>

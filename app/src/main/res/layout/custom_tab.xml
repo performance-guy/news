@@ -1,0 +1,17 @@
+<!--
+  ~ /**
+  ~  * Created by Salman Saleem on 6/21/18 1:44 AM
+  ~  * Copyright (c) 2018 . All rights reserved.
+  ~  * Last modified 2/24/17 12:45 PM
+  ~  */
+  -->
+
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/home_variant"
+    android:layout_margin="0dp"
+    android:gravity="center"
+ />
+ 

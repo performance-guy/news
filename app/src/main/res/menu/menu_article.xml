@@ -1,0 +1,33 @@
+<!--
+  ~ /**
+  ~  * Created by Salman Saleem on 6/21/18 1:44 AM
+  ~  * Copyright (c) 2018 . All rights reserved.
+  ~  * Last modified 7/4/17 8:34 PM
+  ~  */
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yo.app.ui.activity.ArticleActivity">
+
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_marker"
+        android:title="@string/action_save"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_share"
+        android:title="@string/action_share"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_comment"
+        android:icon="@drawable/ic_comment_black_24dp"
+        android:title="@string/action_share"
+        app:actionLayout="@layout/menu_action_item_badge"
+        app:showAsAction="always" />
+
+</menu>
